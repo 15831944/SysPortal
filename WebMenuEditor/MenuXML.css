@@ -1,0 +1,66 @@
+BODY
+{
+    FONT-SIZE: 70%;
+    COLOR: midnightblue;
+    FONT-FAMILY: verdana;
+    BACKGROUND-COLOR: midnightblue
+}
+H1
+{
+    FONT-SIZE: 120%;
+    COLOR: orangered;
+    FONT-STYLE: italic
+}
+UL
+{
+    MARGIN-BOTTOM: 5px;
+    MARGIN-LEFT: 0px
+}
+LI UL
+{
+    DISPLAY: none;
+    MARGIN-LEFT: 16px;
+    COLOR: peachpuff
+}
+LI
+{
+    FONT-WEIGHT: bold;
+    CURSOR: default;
+    COLOR: palegoldenrod;
+    LIST-STYLE-TYPE: square
+}
+LI.clsHasKids
+{
+    CURSOR: hand;
+    COLOR: gold;
+    LIST-STYLE-TYPE: none;
+    TEXT-DECORATION: none
+}
+A:link
+{
+    FONT-WEIGHT: normal;
+    COLOR: palegoldenrod;
+    TEXT-DECORATION: none
+}
+A:visited
+{
+    FONT-WEIGHT: normal;
+    COLOR: blanchedalmond;
+    TEXT-DECORATION: none
+}
+A:active
+{
+    FONT-WEIGHT: normal;
+    COLOR: azure;
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    COLOR: aqua;
+    TEXT-DECORATION: none
+}
+BUTTON
+{
+    FONT-SIZE: 100%;
+    FONT-FAMILY: tahoma
+}

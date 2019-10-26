@@ -1,0 +1,1 @@
+.\Authenticode\ie4\signcode -spc credentials.spc -v privatekey.pvk -n "Web Defect Manager" -t http://timestamp.verisign.com/scripts/timstamp.dll -i http:\\www.merc-int.com wtdimprj.ocx

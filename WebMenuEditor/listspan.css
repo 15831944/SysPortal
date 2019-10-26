@@ -1,0 +1,16 @@
+
+	/* LISTSPAN.CSS */
+	
+	BODY { font-family:verdana; font-size:70%; }
+	H1 { font-size:120%; font-style:italic; }
+
+	UL { margin-left:0px; margin-bottom:5px; }
+	LI UL { display:none; margin-left:16px; }
+	LI { font-weight:bold; list-style-type:square; cursor:default; }
+	LI.clsHasKids { list-style-type:none; }
+	LI.clsHasKids SPAN { cursor:hand; }
+
+	A:link, A:visited, A:active { font-weight:normal; color:navy; }
+	A:hover { text-decoration:none; }
+
+	BUTTON { font-family:tahoma; font-size:100%; }

@@ -1,0 +1,261 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""TreeWebControl.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TreeWebControl Module\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TreeWebControl\0"
+            VALUE "LegalCopyright", "Copyright 2000    Novick Vladimir vladn.novick@gmail.com\0"
+            VALUE "OriginalFilename", "TreeWebControl.DLL\0"
+            VALUE "ProductName", "TreeWebControl Module\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "OLESelfRegister", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_NTREEEDIT DIALOGEX 0, 0, 210, 244
+STYLE WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_TREE_CTRL,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    TVS_NOTOOLTIPS | WS_TABSTOP,1,21,202,71,
+                    WS_EX_LEFTSCROLLBAR
+    PUSHBUTTON      "Expand",IDC_BTN_PLUS,1,0,13,11,BS_BITMAP | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "Collapse",IDC_BTN_COLLAPSE,15,0,13,11,BS_BITMAP | NOT 
+                    WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_OPEN           ICON    DISCARDABLE     "Images\\Openfold.ico"
+IDI_ICON_PERSONAL_LINK  ICON    DISCARDABLE     "Images\\icon3.ico"
+IDI_ICON_LINK           ICON    DISCARDABLE     "Images\\Link.ico"
+IDI_ICON_CLOSE          ICON    DISCARDABLE     "Images\\Remteacc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_DIALOG_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "New",                         ID_FILE_NEW
+        MENUITEM "Open",                        ID_FILE_OPENFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Save",                        ID_FILE_SAVE
+        MENUITEM "Save As ..",                  ID_FILE_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_FILE_EXIT
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Insert folder",               ID_POPMENUTREE_INSERTFOLDER
+        MENUITEM "Insert item",                 ID_POPMENUTREE_INSERTITEM
+        MENUITEM SEPARATOR
+        MENUITEM "Insert top folder",           ID_POPMENUTREE_INSERTTOPFOLDER
+
+        MENUITEM "Insert top item",             ID_POPMENUTREE_INSERTTOPITEM
+        MENUITEM SEPARATOR
+        MENUITEM "Insert copy",                 ID_POPMENUTREE_INSERTCOPY
+        MENUITEM "Insert from the file",        ID_EDIT_INSERTFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Save folder to file",         ID_EDIT_SAVEFOLDERTOFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Delete",                      ID_POPMENUTREE_DELETE
+        MENUITEM "Delete All",                  ID_INSERT_DELETEALL
+    END
+    POPUP "  Export"
+    BEGIN
+        MENUITEM "DHTML tree view page navigator", 
+                                                ID_EXPORT_HTMLTREEVIEWPAGE
+    END
+    POPUP "     Expand"
+    BEGIN
+        MENUITEM "+ Expand ALL",                ID_POPMENUTREE_EXPANDALL_N
+        MENUITEM "-  Collapse ALL",             ID_POPMENUTREE_COLLAPSED_N
+    END
+    POPUP "    Help"
+    BEGIN
+        MENUITEM "About",                       ID_HELP_ABOUT
+    END
+END
+
+IDR_MENU_POPUP_TREE MENU DISCARDABLE 
+BEGIN
+    POPUP "PopMenuTree"
+    BEGIN
+        MENUITEM "+ Expand",                    ID_POPMENUTREE_EXPANDALL
+        MENUITEM "-  Collapse",                 ID_POPMENUTREE_COLLAPSED
+        MENUITEM SEPARATOR
+        MENUITEM "New folder",                  ID_POPMENUTREE_INSERTFOLDER
+        MENUITEM "New item",                    ID_POPMENUTREE_INSERTITEM
+        MENUITEM SEPARATOR
+        MENUITEM "Insert top folder",           ID_POPMENUTREE_INSERTTOPFOLDER
+
+        MENUITEM "Insert top item",             ID_POPMENUTREE_INSERTTOPITEM
+        MENUITEM SEPARATOR
+        MENUITEM "Insert copy",                 ID_POPMENUTREE_INSERTCOPY
+        MENUITEM SEPARATOR
+        MENUITEM "Delete",                      ID_POPMENUTREE_DELETE
+    END
+END
+
+ID_TOOLBAR MENU DISCARDABLE 
+BEGIN
+    POPUP "ToolBar"
+    BEGIN
+        MENUITEM "Expand",                      ID_TOOLBAR_EXPAND
+        MENUITEM "Collapse",                    ID_TOOLBAR_COLLAPSE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_NTREEEDIT           BITMAP  DISCARDABLE     "images\\ntreeedi.bmp"
+IDB_PLUS                BITMAP  DISCARDABLE     "images\\plus.bmp"
+IDB_MINUS               BITMAP  DISCARDABLE     "images\\minus.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "TreeWebControl"
+    IDS_CUT                 "cut"
+    IDS_COPY                "copy"
+    IDS_PASTE               "Paste"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Unknown language: 0xD, 0x1 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HEB)
+#ifdef _WIN32
+LANGUAGE 0xD, 0x1
+#pragma code_page(1255)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_NTREEEDIT           REGISTRY DISCARDABLE    "NTreeEdit.rgs"
+#endif    // Unknown language: 0xD, 0x1 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "TreeWebControl.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

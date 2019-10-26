@@ -1,0 +1,33 @@
+HKCR
+{
+	TreeWebControl.NTreeEdit.1 = s 'NTreeEdit Class'
+	{
+		CLSID = s '{25E91C11-58A1-11D4-9F4B-005004816FFF}'
+	}
+	TreeWebControl.NTreeEdit = s 'NTreeEdit Class'
+	{
+		CLSID = s '{25E91C11-58A1-11D4-9F4B-005004816FFF}'
+		CurVer = s 'TreeWebControl.NTreeEdit.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {25E91C11-58A1-11D4-9F4B-005004816FFF} = s 'NTreeEdit Class'
+		{
+			ProgID = s 'TreeWebControl.NTreeEdit.1'
+			VersionIndependentProgID = s 'TreeWebControl.NTreeEdit'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Control'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '131473'
+			}
+			'TypeLib' = s '{25E91C04-58A1-11D4-9F4B-005004816FFF}'
+			'Version' = s '1.0'
+		}
+	}
+}

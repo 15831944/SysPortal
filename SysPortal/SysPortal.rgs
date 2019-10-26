@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{4914A082-DA4A-11D3-9F4B-005004816FFF} = s 'SysPortal'
+		'SysPortal.EXE'
+		{
+			val AppID = s {4914A082-DA4A-11D3-9F4B-005004816FFF}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml:stylesheet type="text/xsl" href="menus.xsl"?>
+<TOPICLIST TYPE="Menu current system">
+    <TOPICS TYPE="Web Mastergfgfgfgfgfgfg">
+        <TOPIC><TITLE>Web technologies</TITLE><URL>http://developer.netscape.com/tech/index.html?cp=dev01ttec</URL></TOPIC>
+    </TOPICS>
+    <TOPICS TYPE="Web Mastergfgfgfgfgfg">
+        <TOPIC><TITLE>World Wide Web consortium</TITLE><URL>http://www.w3.org/</URL></TOPIC>
+        <TOPIC><TITLE>Documentation</TITLE><URL>http://developer.netscape.com/docs/index.html?cp=dev01tdoc</URL></TOPIC>
+        <TOPIC><TITLE>Web technologies</TITLE><URL>http://developer.netscape.com/tech/index.html?cp=dev01ttec</URL></TOPIC>
+    </TOPICS>
+    <TOPICS TYPE="Web Mastergfgfgfgfgfgfgfgfg">
+        <TOPIC><TITLE>Web technologies</TITLE><URL>http://developer.netscape.com/tech/index.html?cp=dev01ttec</URL></TOPIC>
+    </TOPICS>
+    <TOPICS TYPE="Web Mastergfgfgfgfgfgfgf">
+        <TOPIC><TITLE>World Wide Web consortium</TITLE><URL>http://www.w3.org/</URL></TOPIC>
+        <TOPIC><TITLE>Documentation</TITLE><URL>http://developer.netscape.com/docs/index.html?cp=dev01tdoc</URL></TOPIC>
+        <TOPIC><TITLE>Web technologies</TITLE><URL>http://developer.netscape.com/tech/index.html?cp=dev01ttec</URL></TOPIC>
+    </TOPICS>
+</TOPICLIST>

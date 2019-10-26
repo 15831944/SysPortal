@@ -1,0 +1,68 @@
+// TreeWebControl.idl : IDL source for TreeWebControl.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (TreeWebControl.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+#define DISPID_URL 0
+#define DISPID_TreeBkColor 2	
+#define DISPID_TreeTextColor 3	
+
+	[
+		object,
+		uuid(25E91C10-58A1-11D4-9F4B-005004816FFF),
+		dual,
+		helpstring("INTreeEdit Interface"),
+		pointer_default(unique)
+	]
+	interface INTreeEdit : IDispatch
+	{
+		[propget, id(DISPID_URL), helpstring("property URL")] HRESULT URL([out, retval] BSTR *pVal);
+		[propput, id(DISPID_URL), helpstring("property URL")] HRESULT URL([in] BSTR newVal);
+		[id(1), helpstring("method Refresh")] HRESULT Refresh();
+		[propget, id(DISPID_TreeBkColor), helpstring("property TreeBkColor")] HRESULT TreeBkColor([out, retval] long *pVal);
+		[propput, id(DISPID_TreeBkColor), helpstring("property TreeBkColor")] HRESULT TreeBkColor([in] long newVal);
+		[propget, id(DISPID_TreeTextColor), helpstring("property TreeTextColor")] HRESULT TreeTextColor([out, retval] long *pVal);
+		[propput, id(DISPID_TreeTextColor), helpstring("property TreeTextColor")] HRESULT TreeTextColor([in] long newVal);
+	};
+
+[
+	uuid(25E91C04-58A1-11D4-9F4B-005004816FFF),
+	version(1.0),
+	helpstring("TreeWebControl 1.0 Type Library")
+]
+library TREEWEBCONTROLLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+ 
+	[
+		uuid(25E91C15-58A1-11D4-9F4B-005004816FFF),
+		helpstring("_NTreeEditEvents Interface")
+	]
+
+
+
+	dispinterface _INTreeEditEvents
+	{
+		properties:
+		methods:
+		[id(1), helpstring("method Click")] void Click([in] long x, [in] long y);
+		[id(2), helpstring("method DbClick")] void DbClick([in] BSTR Url, [in] BSTR Name );
+		[id(3), helpstring("method SelectItem")] HRESULT SelectItem(BSTR Url,BSTR Name);
+		[id(4), helpstring("method SelectFolder")] HRESULT SelectFolder(BSTR URL,BSTR Name);
+	};
+
+	[
+		uuid(25E91C11-58A1-11D4-9F4B-005004816FFF),
+		helpstring("NTreeEdit Class")
+	]
+	coclass NTreeEdit
+	{
+		[default] interface INTreeEdit;
+		[default, source] dispinterface _INTreeEditEvents;
+	};
+};

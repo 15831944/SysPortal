@@ -1,0 +1,56 @@
+<html>
+
+<head>
+<title>NTreeEdit</title>
+</head>
+
+<body>
+<table>
+<tr>
+<td>
+<IFRAME name="top_frame" src="web_training_system_top.htm" width=100% 
+  style="WIDTH: 100%; HEIGHT: 69px border=0" 
+     >
+</IFRAME>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" align="left">
+      <OBJECT id=NTreeEdit classid=CLSID:25E91C11-58A1-11D4-9F4B-005004816FFF 
+      width=236 height=648><PARAM NAME="URL" VALUE="http://localhost/TreeWebControl/Users/folder.pl"><PARAM NAME="TreeBkColor" VALUE="8888888"><PARAM NAME="TreeTextColor" VALUE="999999999"><PARAM NAME="_cx" VALUE="6244"><PARAM NAME="_cy" VALUE="17145"></OBJECT>
+<script LANGUAGE="VBScript">
+   Sub NTreeEdit_DbClick(URL,NAME)
+      
+      set d = document.frames("top_frame").document
+      d.close 
+      d.open 
+      d.write NAME
+   End Sub
+
+   Sub NTreeEdit_SelectItem(URL,NAME)
+      set d = document.frames("top_frame").document
+      d.close 
+      d.open 
+      d.write NAME
+   End Sub
+
+
+
+</script> <script language="javascript">
+//  NTreeEdit.TreeTextColor = 999999999
+//    NTreeEdit.TreeBkColor = 8888888 
+//    NTreeEdit.URL = "http://localhost/NTreeEdit/users/contents.mnu"
+</script>
+
+      <P></P>
+
+</td>
+<td valign="top" align="left">
+</td>
+</tr>
+</table>
+
+</body>
+</html>

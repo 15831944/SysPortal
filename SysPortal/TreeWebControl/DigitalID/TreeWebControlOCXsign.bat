@@ -1,0 +1,1 @@
+.\Authenticode\ie4\signcode -spc credentials.spc -v privatekey.pvk -n "Mercury Internet Portal V1.0" -t http://timestamp.verisign.com/scripts/timstamp.dll -i http:\\www.merc-int.com TreeWebControl.ocx

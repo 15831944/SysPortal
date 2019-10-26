@@ -1,0 +1,392 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""SysPortal.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_RBUTTON MENU DISCARDABLE 
+BEGIN
+    POPUP "Popup menu place holder"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Configuration",               ID_PROPERTIES
+        MENUITEM "&About",                      ID_ABOUT
+        MENUITEM "E&xit",                       ID_EXIT
+    END
+END
+
+IDR_LBUTTON MENU DISCARDABLE 
+BEGIN
+    POPUP "Popup menu place holder"
+    BEGIN
+        MENUITEM SEPARATOR
+    END
+END
+
+IDR_MENU_POPUP_TREE MENU DISCARDABLE 
+BEGIN
+    POPUP "PopMenuTree"
+    BEGIN
+        MENUITEM "+ Expand All",                ID_POPMENUTREE_EXPANDALL
+        MENUITEM "-  Collapsed",                ID_POPMENUTREE_COLLAPSED
+        MENUITEM SEPARATOR
+        MENUITEM "Delete",                      ID_POPMENUTREE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Insert folder",               ID_POPMENUTREE_INSERTFOLDER
+        MENUITEM "Insert item",                 ID_POPMENUTREE_INSERTITEM
+        MENUITEM SEPARATOR
+        MENUITEM "Insert copy",                 ID_POPMENUTREE_INSERTCOPY
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_HOTINTERNET         ICON    DISCARDABLE     "images\\SysPortal.ICO"
+IDI_FOLDER              ICON    DISCARDABLE     "images\\cabview.ico"
+IDI_INTERNET_OPTIONS    ICON    DISCARDABLE     "images\\Entirnet.ico"
+IDI_MENU_OPTIONS        ICON    DISCARDABLE     "images\\MenuOpt.ico"
+IDI_USER_OPTIONS        ICON    DISCARDABLE     "images\\user_opt.ico"
+IDI_ICON_LINK           ICON    DISCARDABLE     "IMAGES\\Link.ico"
+IDI_ICON_CLOSE          ICON    DISCARDABLE     "IMAGES\\Remteacc.ico"
+IDI_ICON_OPEN           ICON    DISCARDABLE     "IMAGES\\Openfold.ico"
+IDI_ICON_PERSONAL_LINK  ICON    DISCARDABLE     "images\\icon3.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 160, 49
+STYLE DS_MODALFRAME | DS_NOIDLEMSG | DS_3DLOOK | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_NOPARENTNOTIFY | WS_EX_CONTROLPARENT | WS_EX_STATICEDGE
+CAPTION "About "
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,13,33,14
+    LTEXT           "v_novick@yahoo.com",IDC_STATIC,53,32,80,10
+    LTEXT           "(c) SysPortal ",IDC_STATIC,73,8,46,8
+    LTEXT           "Developer: Vladimir Novick",IDC_STATIC,51,19,97,8
+END
+
+IDD_TOOLTIPS DIALOG DISCARDABLE  0, 0, 196, 19
+STYLE WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_WORD_BOX,5,2,183,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+END
+
+IDD_DIALOGPROP DIALOG DISCARDABLE  0, 0, 301, 143
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SysPortal properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",1,9,122,32,14
+    PUSHBUTTON      "Calcel",IDCANCEL,44,122,36,13
+    CONTROL         "Tab1",IDC_TAB_MAIN,"SysTabControl32",TCS_BOTTOM,4,4,295,
+                    113
+END
+
+IDD_PANELMENUPROP DIALOG DISCARDABLE  0, 0, 290, 74
+STYLE WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Default browser",IDC_STATIC,9,7,141,61,WS_GROUP
+    CONTROL         172,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,23,20,13,
+                    12
+    CONTROL         "Microsoft internet explorer",
+                    IDC_RADIO_INTERNET_EXPLORER,"Button",BS_AUTORADIOBUTTON,
+                    45,23,113,8
+    CONTROL         171,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,23,36,13,
+                    12
+    CONTROL         "Netscape Navigator",IDC_RADIO_NETSCAPE,"Button",
+                    BS_AUTORADIOBUTTON,45,37,93,8
+    CONTROL         "System default browser",
+                    IDC_RADIO_SYSTEM_DEFAULT_BROWSER,"Button",
+                    BS_AUTORADIOBUTTON,45,52,95,10
+    CONTROL         173,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,23,52,13,
+                    12
+    GROUPBOX        "Open link",IDC_STATIC,161,11,88,57,WS_GROUP
+    CONTROL         "New window",IDC_RADIO_NEW_WINDOW,"Button",
+                    BS_AUTORADIOBUTTON,171,25,69,12
+    CONTROL         "Active window",IDC_RADIO_ACTIVE_WINDOW,"Button",
+                    BS_AUTORADIOBUTTON,172,44,65,9
+END
+
+IDD_PANELINTERNETOPTIONS DIALOG DISCARDABLE  0, 0, 273, 70
+STYLE WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Preserve ISDN and Modem line",IDC_CHECKISDN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,34,23,116,9
+    CONTROL         "Internet accelerate ",IDC_ACCELERATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,34,38,74,10
+    GROUPBOX        "Connect options",IDC_STATIC,6,10,154,49
+    CONTROL         174,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,18,37,13,
+                    12
+    CONTROL         175,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,18,22,13,
+                    12
+END
+
+IDD_CPANELUSERCONFIG DIALOG DISCARDABLE  0, 0, 290, 83
+STYLE WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_USER_NAME,98,15,146,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    LTEXT           "User name:",IDC_STATIC,38,17,37,11
+    CONTROL         176,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,9,5,13,12
+    EDITTEXT        IDC_EDIT_COMPUTER_NAME,98,33,146,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Computer name",IDC_STATIC,38,35,52,10
+    EDITTEXT        IDC_EDIT_HOST_NAME,98,51,147,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,29,3,225,66
+    LTEXT           "Workgroup",IDC_STATIC,38,51,40,10
+END
+
+IDD_EXIT DIALOG DISCARDABLE  0, 0, 162, 73
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "SysPortal"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",1,103,51,50,14
+    LTEXT           "Thank you for using SysPortal",IDC_STATIC,9,4,114,10
+    GROUPBOX        "",IDC_STATIC,2,42,158,31
+    LTEXT           "To run SysPortal again go to",IDC_STATIC,7,20,99,10
+    LTEXT           "SysPortal.exe",IDC_STATIC,8,31,58,9
+    ICON            IDI_HOTINTERNET,IDC_STATIC,124,14,20,20
+    PUSHBUTTON      "Cancel",IDC_BUTTON_CANCEL,8,50,53,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 157
+    END
+
+    IDD_TOOLTIPS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 195
+    END
+
+    IDD_DIALOGPROP, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 138
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Developer :   Novick Vladimir vladn.novick@gmail.com\0"
+            VALUE "CompanyName", "Vladimir Novick\0"
+            VALUE "FileDescription", "SysPortal Module\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SysPortal\0"
+            VALUE "LegalCopyright", "Copyright 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OLESelfRegister", "\0"
+            VALUE "OriginalFilename", "SysPortal.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "SysPortal Module\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_SysPortal           REGISTRY MOVEABLE PURE  "SysPortal.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CHECK               BITMAP  DISCARDABLE     "images\\IDB_CHECK.bmp"
+IDB_ITEMDEFAULT         BITMAP  DISCARDABLE     "images\\iIDB_ITEMDEFAULT.bmp"
+IDB_ITEMMASK            BITMAP  DISCARDABLE     "images\\itemmask.bmp"
+IDB_EXPLORER            BITMAP  DISCARDABLE     "images\\bitmap1.bmp"
+IDB_NETSCAPE            BITMAP  DISCARDABLE     "images\\bmp00001.bmp"
+IDB_MERC                BITMAP  DISCARDABLE     "images\\bmp00002.bmp"
+IDB_LOCALMENU           BITMAP  DISCARDABLE     "images\\localmen.bmp"
+IDB_INTRANET            BITMAP  DISCARDABLE     "images\\intranet.bmp"
+IDB_FIND                BITMAP  DISCARDABLE     "images\\FindLink.bmp"
+IDB_MIS                 BITMAP  DISCARDABLE     "images\\bmp00004.bmp"
+IDB_BITMAP_TITLE        BITMAP  DISCARDABLE     "images\\bitmap_t.bmp"
+IDB_ITEMDEFAULT_N       BITMAP  DISCARDABLE     "images\\IDB_ITEMDEFAULT_N.bmp"
+IDB_ISRAEL              BITMAP  DISCARDABLE     "images\\israel.bmp"
+IDB_USA                 BITMAP  DISCARDABLE     "images\\usa.bmp"
+IDB_HANDICO             BITMAP  DISCARDABLE     "images\\handico.bmp"
+IDB_CONFIG              BITMAP  DISCARDABLE     "images\\config.bmp"
+IDB_CLOSE               BITMAP  DISCARDABLE     "images\\close.bmp"
+IDB_WORKGROUPS          BITMAP  DISCARDABLE     "images\\workgrou.bmp"
+IDB_PERSONAL            BITMAP  DISCARDABLE     "images\\personal.bmp"
+IDB_COMMENT             BITMAP  DISCARDABLE     "images\\comment.bmp"
+IDB_ABOUT               BITMAP  DISCARDABLE     "images\\bollon.bmp"
+IDB_BOOKS               BITMAP  DISCARDABLE     "images\\books.bmp"
+#if defined(APSTUDIO_INVOKED) || defined(KK)
+#if defined(APSTUDIO_INVOKED)
+IDB_PUBLIC_LINK$(KK)    BITMAP  DISCARDABLE     "images\\public_l.bmp"
+#else
+IDB_PUBLIC_LINK         BITMAP  DISCARDABLE     "images\\public_l.bmp"
+#endif
+#endif
+IDB_PUBLIC_LINK_DIALOG  BITMAP  DISCARDABLE     "images\\PLinkDLG.bmp"
+IDB_WORKGROUPS_DIALOG   BITMAP  DISCARDABLE     "images\\workgr_dlg.bmp"
+IDB_FIND_DLG            BITMAP  DISCARDABLE     "images\\find_dlg.bmp"
+IDB_SELECTED            BITMAP  DISCARDABLE     "images\\prev.bmp"
+IDB_SELECTING           BITMAP  DISCARDABLE     "images\\selectin.bmp"
+#if defined(APSTUDIO_INVOKED) || !defined(KK)
+IDB_PUBLIC_LINK         BITMAP  DISCARDABLE     "images\\bmp00003.bmp"
+#endif
+IDB_MENU_SAMPLES        BITMAP  DISCARDABLE     "images\\menu_sam.bmp"
+IDB_NEXT                BITMAP  DISCARDABLE     "images\\IDB_NEXT.bmp"
+IDB_NEXT_S              BITMAP  DISCARDABLE     "images\\next_s.bmp"
+IDB_NETSCAPE_MIN        BITMAP  DISCARDABLE     "images\\netscape.bmp"
+IDB_EXPLORER_MIN        BITMAP  DISCARDABLE     "images\\explorer.bmp"
+IDB_DEFAULT_BROWSER     BITMAP  DISCARDABLE     "images\\default_.bmp"
+IDB_INTERNET_ACCELERATE BITMAP  DISCARDABLE     "images\\internet.bmp"
+IDB_ISDN_FIX            BITMAP  DISCARDABLE     "images\\isdn_fix.bmp"
+IDB_USER                BITMAP  DISCARDABLE     "images\\user.bmp"
+IDB_MINUS               BITMAP  DISCARDABLE     "images\\minus.bmp"
+IDB_PLUS                BITMAP  DISCARDABLE     "images\\plus.bmp"
+IDB_EDIT_PERSONAL_LINE  BITMAP  DISCARDABLE     "images\\edit_per.bmp"
+IDB_DATABASE            BITMAP  DISCARDABLE     "images\\database.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_NO_DROP_1    CURSOR  DISCARDABLE     "IMAGES\\Nodrop01.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ABOUT                "About \n About"
+    ID_PROPERTIES           "Set configuration \n Set configuration"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "SysPortal"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "SysPortal.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
